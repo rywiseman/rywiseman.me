@@ -1,0 +1,52 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body {
+  background-color: orange;
+  font-family: "Gill Sans", helvetica, sans-serif;
+}
+
+
+.page {
+  padding: 20px;
+  margin: 20px;
+  border-bottom: 20px solid black;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.primary-nav {
+  background-color: rgba(255, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.primary-nav ul {
+  padding: 0;
+  margin: 0;
+}
+.primary-nav li {
+  display: inline;
+}
+
+.primary-nav a {
+  display: inline-block;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+
+}
+
+.primary-nav a:hover {
+  background-color: rgba(255,255,255,0.3);
+}
